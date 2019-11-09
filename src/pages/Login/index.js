@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom'
 export default class Login extends Component {
   render() {
     return (
-    <div className="Login">
-      <section className="container mx-auto py-4 px-8">
+      <section id="Login" className="container mx-auto py-4 px-64">
         <div className="border border-gray-400 lg:border-l lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r lg:rounded-l p-4 flex flex-col justify-between leading-normal">
           <div className="text-gray-theme font-bold text-xl mb-8 text-center">Olá! Efetue seu login abaixo.</div>
           <form className="w-full max-w-sm mx-auto">
@@ -43,7 +42,6 @@ export default class Login extends Component {
           </form>
         </div>
       </section>
-    </div>
     );
   }
 }

@@ -17,6 +17,7 @@ import Records from './pages/Records'
 import Reports from './pages/Reports'
 import Profile from './pages/Profile'
 import SingleProfile from './pages/SingleProfile'
+import SingleReport from './pages/SingleReport'
 
 export default function App() {
   return (
@@ -26,7 +27,8 @@ export default function App() {
         <Switch>
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/profile/:id" component={SingleProfile} />
-          <Route path="/reports" component={Reports} />
+          <Route exact path="/reports" component={Reports} />
+          <Route exact path="/reports/:id" component={SingleReport} />
           <Route path="/records" component={Records} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/" component={Login} />

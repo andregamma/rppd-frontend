@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, useRouteMatch, withRouter } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 // import { Container } from './styles';
 
@@ -17,7 +17,7 @@ class Records extends Component {
         });
     };
   render() {
-    const { path, url } = this.props.match;
+    const { url } = this.props.match;
     return (
         <div className="Records">
             <section className="container mx-auto py-4 px-8 flex flex-row-reverse">
@@ -56,8 +56,8 @@ class Records extends Component {
                     <div className="container mx-auto py-8">
                         <input className="w-full h-12 px-3 rounded mb-8 focus:outline-none focus:shadow-outline text-xl px-8 shadow-lg" type="search" placeholder="Faça sua busca..." />
                         <nav className="flex">
-                            <a className="no-underline text-gray-theme py-3 px-4 font-medium mr-3 bg-yellow-theme" href="#">Prisões</a>
-                            <a className="no-underline text-gray-theme py-3 px-4 font-medium mx-3 bg-yellow-theme" href="#">Boletins de ocorrência</a>
+                            <Link to="#" className="no-underline text-gray-theme py-3 px-4 font-medium mr-3 bg-yellow-theme">Prisões</Link>
+                            <Link to="#" className="no-underline text-gray-theme py-3 px-4 font-medium mx-3 bg-yellow-theme">Boletins de ocorrência</Link>
                         </nav>
                     </div>
                 </div>
