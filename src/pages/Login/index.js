@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-// import { Container } from './styles';
 
-export default class Login extends Component {
+export default class LoginPage extends Component {
   render() {
     return (
-      <section id="Login" className="container mx-auto py-4 px-64">
+      <section id="login-page" className="container mx-auto py-4 px-64">
         <div className="border border-gray-400 lg:border-l lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r lg:rounded-l p-4 flex flex-col justify-between leading-normal">
           <div className="text-gray-theme font-bold text-xl mb-8 text-center">Olá! Efetue seu login abaixo.</div>
           <form className="w-full max-w-sm mx-auto">
@@ -16,7 +15,7 @@ export default class Login extends Component {
                 </label>
               </div>
               <div className="md:w-2/3">
-                <input className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-theme" id="inline-username" type="text" placeholder="Jhon Wick" />
+                <input className="form-input border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-theme" id="inline-username" type="text" placeholder="Jhon Wick" />
               </div>
             </div>
             <div className="md:flex md:items-center mb-6">

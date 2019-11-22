@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Page, Text, View, Document, StyleSheet, PDFViewer } from '@react-pdf/renderer';
-import { FaAddressCard } from "react-icons/fa";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+
+import Card from '../../components/Card'
 
 // import { Container } from './styles';
 const styles = StyleSheet.create({
@@ -110,38 +111,7 @@ class Reports extends Component {
             </div>
             <hr className="mb-4"/>
             <div className="md:flex md:justify-between">
-                <div className="md:flex">
-                    <div className="md:flex-shrink-0">
-                        <img className="rounded-lg md:w-32" src="https://image.prntscr.com/image/KOawqlR4RxK82kcv2sWzUQ.png" alt="Jhon Wick" />
-                    </div>
-                    <div className="mt-4 md:mt-0 md:ml-6">
-                        <div className="flex flex-row items-center uppercase tracking-wide text-sm text-yellow-theme font-bold">
-                            <FaAddressCard />
-                            <span className="ml-2">973</span>
-                        </div>
-                        <Link to="/profile/1" className="block mt-1 text-lg leading-tight font-semibold text-gray-900">Colin Mandrak</Link>
-                        <p className="mt-2 text-gray-600">Texto descritivo</p>
-
-                        <div className="flex mt-4 justify-between">
-                            <Link to={`${url}/1`} class="inline-block px-3 py-2 bg-gray-800 rounded-lg leading-none text-sm font-medium text-white">
-                                Mais detalhes
-                            </Link>
-                            <Link to="#" class="inline-block px-3 py-2 mx-4 bg-gray-800 rounded-lg leading-none text-sm font-medium text-white">
-                                Baixar PDF
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="md:flex">
-                    <div className="md:flex-shrink-0">
-                        <img className="rounded-lg md:w-32" src="https://cdn.discordapp.com/attachments/604772785176313856/640998615921197066/MARRENTO.png" alt="Ivan Palace" />
-                    </div>
-                    <div className="mt-4 md:mt-0 md:ml-6">
-                    <div className="flex flex-row items-center uppercase tracking-wide text-sm text-yellow-theme font-bold"><FaAddressCard /><span className="ml-2">02</span></div>
-                        <Link to="#" className="block mt-1 text-lg leading-tight font-semibold text-gray-900">Ivan Palace</Link>
-                        <p className="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+                <Card img="https://vignette.wikia.nocookie.net/nopixel/images/7/7a/Joseph.png/revision/latest?cb=20190630194937" name="José Cristiano" passport="973"/>
             </div>
             
         <div className={`bg-gray-200 w-full mt-12 py-2 px-4 rounded-lg flex flex-col ${this.state.condition ? "hidden" : ""}`} style={{height: '60rem'}}>

@@ -18,6 +18,9 @@ import Reports from './pages/Reports'
 import Profile from './pages/Profile'
 import SingleProfile from './pages/SingleProfile'
 import SingleReport from './pages/SingleReport'
+import SingleCivilian from './pages/SingleCivilian'
+import Calculator from './pages/Calculator'
+import Create from './pages/Create'
 
 export default function App() {
   return (
@@ -25,6 +28,9 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
+          <Route exact path="/create" component={Create} />
+          <Route exact path="/calculator" component={Calculator} />
+          <Route exact path="/civilian/:id" component={SingleCivilian} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/profile/:id" component={SingleProfile} />
           <Route exact path="/reports" component={Reports} />

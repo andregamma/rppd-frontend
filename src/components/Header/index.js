@@ -54,6 +54,13 @@ class Header extends Component {
                         >
                             OFICIAIS CADASTRADOS
                         </NavLink>
+                        <NavLink 
+                            to='/calculator'
+                            className="block lg:inline-block text-md text-gray-900  font-bold sm:hover:border-indigo-400  hover:text-yellow-500 mx-2 p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg" 
+                            activeClassName="text-yellow-500"
+                        >
+                            CALCULADORA
+                        </NavLink>
                     </div>
                     <div className="text-2xl my-1 mx-3">
                         <img src="img/shopping.png" className="h-6" alt="" />
