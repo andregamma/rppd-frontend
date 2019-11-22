@@ -94,7 +94,6 @@ class Reports extends Component {
         });
     };
   render() {
-    const { url } = this.props.match;
     return (
         <>
         <section id="Reports" className="container mx-auto py-4 px-8">
@@ -110,54 +109,14 @@ class Reports extends Component {
                 </div>
             </div>
             <hr className="mb-4"/>
-            <div className="md:flex md:justify-between">
-                <Card img="https://vignette.wikia.nocookie.net/nopixel/images/7/7a/Joseph.png/revision/latest?cb=20190630194937" name="José Cristiano" passport="973"/>
+            <div className="flex justify-between">
+                <Card type="report" img="https://vignette.wikia.nocookie.net/nopixel/images/7/7a/Joseph.png/revision/latest?cb=20190630194937" name="José Cristiano" passport="973"/>
             </div>
             
-        <div className={`bg-gray-200 w-full mt-12 py-2 px-4 rounded-lg flex flex-col ${this.state.condition ? "hidden" : ""}`} style={{height: '60rem'}}>
-        <PDFViewer height="100%">
-            <MyDocument />
-        </PDFViewer>
-            {/**<div className="text-xl font-semibold mx-auto text-center bg-gray-theme w-full text-white rounded-lg">
-                    <p>SECRETARIA DE SEGURANÇA PÚBLICA DA CIDADE DE RIBEIRÃO PIRES </p>
-                    <p>DEPARTAMENTO DE POLÍCIA DE LOS SANTOS</p>
-                    <p>BOLETIM DE OCORRÊNCIA</p>
-                    <p>Nº<span>169</span></p>
-                </div>
-                <hr className="my-4"/>
-                <div className="text-lg font-semibold">VÍTIMA</div>
-                <ul>
-                    <li>
-                        <p><span className="font-semibold">Nome:</span> Carlos Queroneia</p>
-                        <p><span className="font-semibold">Passaporte:</span> 949</p>
-                        <p><span className="font-semibold">Telefone:</span> 758-865</p>
-                        <p><span className="font-semibold">Gênero:</span> Masculino</p>
-                        <p><span className="font-semibold">Profissão:</span> Civil</p>
-                    </li>
-                </ul>
-                <hr className="my-4"/>
-                <div className="text-lg font-semibold">Relato</div>
-                <p>A vítima informou que chegou de bicicleta logo depois que os indivíduos já estavam no posto de gasolina. Pelo o que foi informado, um dos indivíduos ofereceu pedras de crack para a vítima que negou, dizendo que não usava esse tipo de porcaria. O indivíduo já alterado disse que a vítima estava falando mal do produto dele. Logo depois recebemos uma denúncia do civil Cirilo Snider informando que havia uma briga no posto de gasolina informado abaixo. Chegando no local, os oficiais Doug e Guimarães presenciaram um tumulto com cerca de 4 pessoas. Ao questionar o que estava acontecendo no local, a vítima acima foi ameaçada verbalmente que seria “quebrada” pelo suspeito abaixo informado. Como não se consumou a agressão, a vítima foi conduzida até a delegacia pra registrar a ameaça.</p>
-                <hr className="my-4"/>
-                <div className="text-lg font-semibold">Informações adicionais</div>
-                <ul>
-                    <li>
-                        <p><span className="font-semibold">Local da ocorrência:</span> Posto de Gasolina nº 19</p>
-                        <p><span className="font-semibold">Testemunhas:</span> Oficial Doug, Guimarães</p>
-                        <p><span className="font-semibold">Bens envolvidos:</span> N/A</p>
-                    </li>
-                </ul> 
-                <hr className="my-4"/>
-                <div className="text-lg font-semibold">Informações do suspeito</div>
-                <ul>
-                    <li>
-                        <p><span className="font-semibold">Gênero:</span> Masculino</p>
-                        <p><span className="font-semibold">Características:</span> Indivíduo negro, cabelo corte reto preto, camisa cinza, calça jeans clara;</p>
-                    </li>
-                </ul>
-                <hr className="my-4"/>
-                <div className="text-lg font-semibold">Autoridade responsável</div> 
-                <p>Doug Stamper (123)</p>*/}
+            <div className={`bg-gray-200 w-full mt-12 py-2 px-4 rounded-lg flex flex-col ${this.state.condition ? "hidden" : ""}`} style={{height: '60rem'}}>
+                <PDFViewer height="100%">
+                    <MyDocument />
+                </PDFViewer>
             </div>
         </section>
         </>
